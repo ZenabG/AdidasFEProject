@@ -37,6 +37,9 @@ public class LaptopPage extends Utils {
 		Thread.sleep(3000);
 		try {
 			for (WebElement laptop : ListOfLaptops) {
+				
+				waitForFullPageToLoad();
+				waitForElementToBeEnabled(laptop);
 
 				if (laptop.getText().equalsIgnoreCase(laptopName)) {
 					

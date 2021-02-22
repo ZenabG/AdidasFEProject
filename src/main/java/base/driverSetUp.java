@@ -50,7 +50,6 @@ public class driverSetUp {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
-		System.out.println("Page title "+driver.getTitle());
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		log = Logger.getLogger("global");
