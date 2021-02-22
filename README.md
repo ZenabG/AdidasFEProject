@@ -12,3 +12,4 @@ The project hierarchy is:
 * test-extent - this folder stores extent report for each run and screenshots for failed test step.
 
 
+Note: There was an issue of DOM refresh when selecting a laptop (or any item) and after clicking delete on Cart page. I couldn't make it work with all different kinds of wait so there is Thread.sleep() in a couple of methods. Please change the ms to more if the test still fails. 
